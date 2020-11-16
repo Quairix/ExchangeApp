@@ -1,0 +1,299 @@
+{
+	"info": {
+		"_postman_id": "a6cfc1d1-d6d6-4cd7-8bae-47a7e14482e1",
+		"name": "Card-testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Convert-JPY-USD-12",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 1,\n\t\"currencyFrom\" : \"CHF\",\n\t\"currencyTo\" : \"USD\",\n    \"count\" : 12\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert-EUR-USD-19",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 1,\n\t\"currencyFrom\" : \"EUR\",\n\t\"currencyTo\" : \"USD\",\n    \"count\" : 19\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert-USD-RUB-155",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 2,\n\t\"currencyFrom\" : \"USD\",\n\t\"currencyTo\" : \"RUB\",\n    \"count\" : 155\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert-EUR-RUB-225",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 3,\n\t\"currencyFrom\" : \"EUR\",\n\t\"currencyTo\" : \"RUB\",\n    \"count\" : 225\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert-EUR-RUB-22500",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 4,\n\t\"currencyFrom\" : \"EUR\",\n\t\"currencyTo\" : \"RUB\",\n    \"count\" : 22500\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Convert-EUR-USD-19000",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"userId\" : 1,\n\t\"currencyFrom\" : \"EUR\",\n\t\"currencyTo\" : \"USD\",\n    \"count\" : 19000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/exchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"exchange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stats",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stats"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stat max",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stats/Max",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stats",
+						"Max"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stat Sum",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stats/Sum",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stats",
+						"Sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get stat Ratings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/stats/Ratings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"stats",
+						"Ratings"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
